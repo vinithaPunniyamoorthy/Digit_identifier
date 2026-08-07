@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.canvas-container {
+  margin: 20px 0;
+}
+
+.canvas-container button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.canvas-container button:hover {
+  background-color: #21b4d6;
+}
+
+.prediction {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #61dafb;
+}
+
+.probabilities {
+  margin-top: 20px;
+}
+
+.probabilities h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prob-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 400px;
+}
+
+.prob-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  background-color: rgba(97, 218, 251, 0.1);
+}
+
+.prob-item.predicted {
+  background-color: rgba(97, 218, 251, 0.3);
+  border-color: #ffffff;
+}
+
+.digit {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.prob {
+  font-size: 12px;
+  color: #cccccc;
+}
